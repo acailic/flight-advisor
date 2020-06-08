@@ -22,18 +22,18 @@ public class SwaggerConfig {
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2).select()
                 .apis(RequestHandlerSelectors.basePackage("rs.interview.backend.web.rest"))
-                .paths(PathSelectors.ant("/api/*"))
+                .paths(PathSelectors.ant("/api/**"))
                 .build()
                 .apiInfo(apiInfo())
                 .useDefaultResponseMessages(false);
     }
 
     private ApiInfo apiInfo() {
-        ApiInfo apiInfo = new ApiInfo("My REST API",
-                "Some custom description of API.",
+        ApiInfo apiInfo = new ApiInfo("Flight Advisor API",
+                "Find the cheapest flight between two airports.",
                 "API TOS", "Terms of service",
-                new Contact("John Doe", "www.example.com",
-                        "myeaddress@company.com"),
+                new Contact("Aleksandar Ilic", "https://ilicaleksandar.github.io/",
+                        ""),
                 "License of API", "API license URL", Collections.emptyList());
         return apiInfo;
     }
