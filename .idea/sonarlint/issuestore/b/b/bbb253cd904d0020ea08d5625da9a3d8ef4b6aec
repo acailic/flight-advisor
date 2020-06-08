@@ -1,7 +1,0 @@
-
-r	java:S116"VRename this field "PATH_FOLDER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªÆ…8Ñ¯ˆæ§.
-E
-java:S1148&"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8·§æ§.
-b	java:S1125"FDefine and throw a dedicated exception instead of using a generic one.(å¥Ô8·§æ§.
-R
-java:S1191"5Use classes from the Java API instead of Sun classes.(¢¤ÿ…8Î…‹æ§.
