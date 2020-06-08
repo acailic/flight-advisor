@@ -13,6 +13,7 @@
  ### Predefined users:
  
  Admin Role (username/password): admin / admin
+ 
  Guest (User) Role (username/password): guest / guest
  
  ## Swagger
@@ -25,7 +26,8 @@
  
   ## Algorithm
   
-  Bidijkstra algorithn with binomial heap
+  Bidijkstra algorithm with binomial heap
+  O(ElogV)
  
  ### Security
   Spring Security package was used with JWT tokens.
