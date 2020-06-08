@@ -1,0 +1,1064 @@
+{
+	"info": {
+		"_postman_id": "592ea9fc-b231-4f6f-ae0e-c36ec89bb1c8",
+		"name": "Flight-Advisor-Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "register user",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhcHAiOiJhcGwiLCJmZWF0dXJlcyI6WyJVU0VSX1JFUE9SVElOR19TRVRUSU5HUyIsIlRSQU5TTEFUSU9OUyIsIlBST0ZJTEVTIiwiQUNDT1VOVFMiLCJBUkVBX1RSSUdHRVJTIiwiQ09ORklHVVJBVElPTiIsIk9CSkVDVFMiLCJBUkVBUyIsIk1BUCIsIkhJU1RPUlkiXSwiY2xpZW50U2Vzc2lvbiI6InN0YW5kYWxvbmUiLCJyb2xlcyI6WzEyMV0sImdyb3VwSWRzIjpbMV0sInN0YW5kYWxvbmUiOnRydWUsInJhbmRvbU51bWJlciI6NDQ3NTk4MDg4MTIwNDEzOTk4NSwiZmxlZXRzIjpbXSwiaWQiOjEzMSwiZXhwRGF0ZSI6MTU4ODI4NDIwOTU0NywidXNlcm5hbWUiOiJhZG1pbiJ9.vdlhQ5UfQ6onqxnFvpYJvpniBso8SGW1LxCCpsSfYns",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "username",
+						"value": "user",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "user",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "client",
+						"value": "client",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "secret",
+						"value": "secret",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\": \"acailic\", \"email\": \"aca@email.com\", \"password\": \"acailic\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhcHAiOiJhcGwiLCJmZWF0dXJlcyI6WyJVU0VSX1JFUE9SVElOR19TRVRUSU5HUyIsIlRSQU5TTEFUSU9OUyIsIlBST0ZJTEVTIiwiQUNDT1VOVFMiLCJBUkVBX1RSSUdHRVJTIiwiQ09ORklHVVJBVElPTiIsIk9CSkVDVFMiLCJBUkVBUyIsIk1BUCIsIkhJU1RPUlkiXSwiY2xpZW50U2Vzc2lvbiI6InN0YW5kYWxvbmUiLCJyb2xlcyI6WzEyMV0sImdyb3VwSWRzIjpbMV0sInN0YW5kYWxvbmUiOnRydWUsInJhbmRvbU51bWJlciI6NDQ3NTk4MDg4MTIwNDEzOTk4NSwiZmxlZXRzIjpbXSwiaWQiOjEzMSwiZXhwRGF0ZSI6MTU4ODI4NDIwOTU0NywidXNlcm5hbWUiOiJhZG1pbiJ9.vdlhQ5UfQ6onqxnFvpYJvpniBso8SGW1LxCCpsSfYns",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "username",
+						"value": "user",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "user",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "client",
+						"value": "client",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "secret",
+						"value": "secret",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"acailic\",\n    \"password\": \"acailic\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/authenticate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET cities",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhY2FpbGljIiwiYXV0aCI6IlJPTEVfQURNSU4iLCJleHAiOjE1ODkxMDkwNDR9.u6RA3hSxZw6pdpkJnljTtUolgOzBjhoBrBUSdHMF2arkmws1_RP3TEFpsWPBKEIsZQIXwyhW-YIABzsXTIZP8Q",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "user",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "user",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "client",
+						"value": "client",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "secret",
+						"value": "secret",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/cities",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST create city",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhY2FpbGljIiwiYXV0aCI6IlJPTEVfQURNSU4iLCJleHAiOjE1ODkxMDkwNDR9.u6RA3hSxZw6pdpkJnljTtUolgOzBjhoBrBUSdHMF2arkmws1_RP3TEFpsWPBKEIsZQIXwyhW-YIABzsXTIZP8Q",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "user",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "user",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "client",
+						"value": "client",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "secret",
+						"value": "secret",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n  \"name\": \"Šabac\",\r\n  \"country\": \"Serbia\",\r\n  \"description\": \"mali grad\"\r\n \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/cities",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET one city",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhY2FpbGljIiwiYXV0aCI6IlJPTEVfQURNSU4iLCJleHAiOjE1ODkxMDkwNDR9.u6RA3hSxZw6pdpkJnljTtUolgOzBjhoBrBUSdHMF2arkmws1_RP3TEFpsWPBKEIsZQIXwyhW-YIABzsXTIZP8Q",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "user",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "user",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "client",
+						"value": "client",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "secret",
+						"value": "secret",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/cities/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cities",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET comments",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhY2FpbGljIiwiYXV0aCI6IlJPTEVfQURNSU4iLCJleHAiOjE1ODkxMDkwNDR9.u6RA3hSxZw6pdpkJnljTtUolgOzBjhoBrBUSdHMF2arkmws1_RP3TEFpsWPBKEIsZQIXwyhW-YIABzsXTIZP8Q",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "user",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "user",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "client",
+						"value": "client",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "secret",
+						"value": "secret",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/D:/github/flight-advisor-backend-master/airports.txt"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/cities/1/comments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cities",
+						"1",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST create comment",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTU5MTcwNTI5OX0.xTBvEXgpg1BDi6IwTD8pr8ntmVCNGkLFHebULFA0lsuwo3nhrxQ5vMU_SCAyYIfAbps4Asbw7wMJpHu_Wjk4jw",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "user",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "user",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "client",
+						"value": "client",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "secret",
+						"value": "secret",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 1, \r\n  \"text\": \"kupuju se kola\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/cities/1/comments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cities",
+						"1",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET one comment",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhY2FpbGljIiwiYXV0aCI6IlJPTEVfQURNSU4iLCJleHAiOjE1ODkxMDkwNDR9.u6RA3hSxZw6pdpkJnljTtUolgOzBjhoBrBUSdHMF2arkmws1_RP3TEFpsWPBKEIsZQIXwyhW-YIABzsXTIZP8Q",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "user",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "user",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "client",
+						"value": "client",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "secret",
+						"value": "secret",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/D:/github/flight-advisor-backend-master/airports.txt"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/cities/1/comments/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cities",
+						"1",
+						"comments",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE erase comment",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhY2FpbGljIiwiYXV0aCI6IlJPTEVfVVNFUiIsImV4cCI6MTU5MTY3NDMyMX0.v4Z7DZaOm_Mn67CJhPIcSMKrmikok7jO2P_a6Z5zXOLBjeXv-gOj7K-ah-8oEqldc-Cnem7nZOkeKTPbqIEPZA",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "user",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "user",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "client",
+						"value": "client",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "secret",
+						"value": "secret",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 1,\r\n  \"author\": 2,\r\n  \"text\": \"sta ja znam\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/cities/23/comments/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cities",
+						"23",
+						"comments",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT update comment",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhY2FpbGljIiwiYXV0aCI6IlJPTEVfVVNFUiIsImV4cCI6MTU5MTY3NDMyMX0.v4Z7DZaOm_Mn67CJhPIcSMKrmikok7jO2P_a6Z5zXOLBjeXv-gOj7K-ah-8oEqldc-Cnem7nZOkeKTPbqIEPZA",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "user",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "user",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "client",
+						"value": "client",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "secret",
+						"value": "secret",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 1,\r\n  \"author\": 2,\r\n  \"text\": \"sta ja znam\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/cities/1/comments/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cities",
+						"1",
+						"comments",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST import airports",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhY2FpbGljIiwiYXV0aCI6IiIsImV4cCI6MTU5MTMxODg5MH0.udOUayQR5gFceKBjN6OIm7FOCLqKX7lYcpHtVXdxZ476xfmv8RMtrlQN1U_V502G8jzwEp7EUF31yalhIJyLUw",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "user",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "user",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "client",
+						"value": "client",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "secret",
+						"value": "secret",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/D:/github/flight-advisor-backend-master/airports.txt"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/airports/import",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"airports",
+						"import"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST import routes",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhY2FpbGljIiwiYXV0aCI6IlJPTEVfVVNFUiIsImV4cCI6MTU5MTM2NjQ0N30.UZJglQBJaKMwCzBrzUgum6Ae2M92b6lNx2k9NOpez1UzFl_CIhN-yyAwnxfRBcNh5t6QyrV5Dzt1ANaHHPA8lw",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "user",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "user",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "client",
+						"value": "client",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "secret",
+						"value": "secret",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/D:/github/flight-advisor-backend-master/routes.txt"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/routes/import",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"routes",
+						"import"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET cheapest route",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhY2FpbGljIiwiYXV0aCI6IlJPTEVfVVNFUiIsImV4cCI6MTU5MTM2NjQ0N30.UZJglQBJaKMwCzBrzUgum6Ae2M92b6lNx2k9NOpez1UzFl_CIhN-yyAwnxfRBcNh5t6QyrV5Dzt1ANaHHPA8lw",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "user",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "user",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "client",
+						"value": "client",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "secret",
+						"value": "secret",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/D:/github/flight-advisor-backend-master/routes.txt"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/routes/cheapest-price-route?sourceAirportId=1678&destinationExportId=1506",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"routes",
+						"cheapest-price-route"
+					],
+					"query": [
+						{
+							"key": "sourceAirportId",
+							"value": "1678"
+						},
+						{
+							"key": "destinationExportId",
+							"value": "1506"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET cities with SEARCH and LIMIT",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTU5MTcxMDcwMX0.szjF0sJGsAo2EoNoOwE6oFx3EZpZa_FoVyvNGQ0tn13EiEr-qoWBT3EdNvucG8r5SsBkXak7ziEorey5S1-2DQ",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "user",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "user",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "client",
+						"value": "client",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "secret",
+						"value": "secret",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/cities?limitComments=4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cities"
+					],
+					"query": [
+						{
+							"key": "limitComments",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

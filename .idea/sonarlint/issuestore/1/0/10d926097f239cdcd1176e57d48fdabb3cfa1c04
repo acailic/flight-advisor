@@ -1,0 +1,14 @@
+
+y	java:S116 "XRename this field "CLOSED_TARGET" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İ×âüÿÿÿÿ8§¦ú¨.
+[
+java:S1128">Remove this unused import 'rs.interview.backend.domain.Route'.(å„’×8¤¿÷¨.
+r	java:S116"VRename this field "OPEN_SOURCE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á‹ì˜8š¨÷¨.
+o	java:S116""SRename this field "PARENTSA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™ØÛï8™œ‘¨.
+u	java:S116&"TRename this field "DISTANCEB" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»ÙÿŞşÿÿÿÿ8™œ‘¨.
+w	java:S116"VRename this field "OPEN_TARGET" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚ôº×øÿÿÿÿ8¹Šø¨.
+t	java:S116"XRename this field "CLOSED_SOURCE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Êòÿø8äù¨.
+p	java:S116%"TRename this field "DISTANCEA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁÓ¼ø8™œ‘¨.
+t	java:S116#"SRename this field "PARENTSB" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ø³œÛùÿÿÿÿ8™œ‘¨.
+N
+java:S1128
+"1Remove this unused import 'java.math.BigDecimal'.(êêŠ8µì„’¨.

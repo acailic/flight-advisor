@@ -1,0 +1,60 @@
+spring:
+  profiles:
+    active: dev
+    include:
+      - swagger
+  devtools:
+    restart:
+      enabled: true
+    livereload:
+      enabled: false
+  jackson:
+    serialization:
+      indent-output: true
+  main:
+    allow-bean-definition-overriding: true
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:h2:file:~/flightadvisor;DB_CLOSE_DELAY=-1;DATABASE_TO_UPPER=false;
+    username: sa
+    password:
+    hikari:
+      poolName: Hikari
+      auto-commit: false
+  h2:
+    console:
+      enabled: true
+      path: /h2
+      settings:
+        web-allow-others: true
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: false
+    properties:
+      hibernate.id.new_generator_mappings: true
+      hibernate.connection.provider_disables_autocommit: true
+      hibernate.ddl-auto: none
+      hibernate.cache.use_second_level_cache: false
+      hibernate.cache.use_query_cache: false
+  flyway:
+    enabled: true
+    baselineOnMigrate: true
+    locations: classpath:/db
+    clean-on-validation-error: true
+    clean-disabled: false
+
+  servlet:
+    multipart.max-file-size: 10MB
+    multipart.max-request-size: 10MB
+
+jwt:
+  base64Secret: fd54a45s65fds737b9aafcb3412e07ed99b267f33413274720ddbb7f6c5e64e9f14075f2d7ed041592f0b7657baf8
+  # Token is valid 24 hours
+  tokenValidityInSeconds: 86400
+
+uploaded:
+  file:
+    folder: \import\
+
+server:
+  port: 8080
