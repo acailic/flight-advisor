@@ -41,11 +41,29 @@
  1. /api/airports/import
  2. /api/routes/import
  
- Example data in data folder
+ Example data in data folder.
+ 
+ ## Docker
+ 
+ Container image.
+ Local build and run.
+ 
+ From project directory run script `docker.sh`: 
+ ```
+ sh docker.sh
+ ```
+ Pull image from Docker Hub: 
+ ```
+ docker pull acailic/flight-advisor
+ ```
+ Run image:
+ ```
+ docker run -p 8080:8080 flight-advisor
+ ```
  
  TODO:
  
  -  Save graph into DB (mongo or graphdb).
  -  Pagination for more endpoints.
- -  
+ -  More tests
  - 
