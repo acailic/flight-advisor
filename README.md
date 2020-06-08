@@ -33,7 +33,7 @@
  
  ### Security
   Spring Security package was used with JWT tokens.
-  User can only have two roles role, ADMIN or USER.  
+  User can  have two roles role, ADMIN or USER.  
  
  ### Initial data - routes and airports
  CSV files with ORACLE format are supported.
