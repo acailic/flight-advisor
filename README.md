@@ -13,6 +13,7 @@
  ### Predefined users:
  
  Admin Role (username/password): admin / admin
+ 
  Guest (User) Role (username/password): guest / guest
  
  ## Swagger
@@ -25,7 +26,10 @@
  
   ## Algorithm
   
-  Bidijkstra algorithn with binomial heap
+  Bidijkstra algorithm with binomial heap
+  
+  O(ElogV)
+  If a binary min-heap is used to implement the Frontier set, you have log(|v|) for all operations, resulting in O(|E|log|V| + |V|log|V|), but since it is reasonable to assume |E| > |V|, you have O(|E|log|V|).
  
  ### Security
   Spring Security package was used with JWT tokens.
