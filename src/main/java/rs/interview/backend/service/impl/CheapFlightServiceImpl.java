@@ -37,12 +37,12 @@ public class CheapFlightServiceImpl implements CheapFlightService {
 
     @Override
     public Map<String, Double> findCheapestFlight(long sourceAirportId, long destinationAirportId) {
-        /*    TODO: Serialize graph
+/*        *//*    TODO: Serialize graph
          *     Graphs is in memory.
-         */
+         *//*
         if (graph.isEmpty()) {
             createGraphSet();
-        }
+        }*/
 
         DirectedGraphNode sourceAirport =
                 graph.stream().filter(directedGraphNode -> directedGraphNode.getId().equals(sourceAirportId)).findFirst().orElse(null);
