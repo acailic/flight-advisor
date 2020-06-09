@@ -1,4 +1,4 @@
-FROM maven:3-jdk-8-slim
+FROM maven:3-jdk-11-slim
 EXPOSE 8080
 COPY . /app/
 WORKDIR /app
