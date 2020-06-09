@@ -67,4 +67,4 @@
  -  Pagination for more endpoints.
  -  Different profiles for running (at the moment only dev,swagger profile)
  -  Exception handling messages in body.
- -  Fix tests
+ -  Add and fix tests
