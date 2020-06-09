@@ -5,6 +5,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -48,12 +49,16 @@ public class RouteController {
         return ResponseEntity.ok().body(flightRoutes);
     }
 
+    /*
+        Graph is created only on import.
+        If data is already in H2, this endpoint is used for re-creating graph.
+     */
 
     @PreAuthorize("hasAuthority(\"" + AuthoritiesConstants.USER + "\")")
-    @GetMapping("/map-graph")
-    public ResponseEntity<Void> mapGraph() {
+    @PutMapping("/map-graph")
+    public ResponseEntity<Void> updateGraph() {
         cheapFlightService.mapGraph();
-        return new ResponseEntity<>(HttpStatus.ACCEPTED);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 
 }

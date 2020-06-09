@@ -63,7 +63,8 @@
  
  TODO:
  
- -  Save graph into DB (mongo or graphdb).
+ -  Save graph into DB (mongo or graph type db).
  -  Pagination for more endpoints.
- -  More tests
- - 
+ -  Different profiles for running (at the moment only dev,swagger profile)
+ -  Exception handling messages in body.
+ -  Fix tests

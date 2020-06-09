@@ -13,6 +13,7 @@ import rs.interview.backend.security.AuthoritiesConstants;
 import rs.interview.backend.service.UserService;
 import rs.interview.backend.service.dto.UserDTO;
 import rs.interview.backend.web.rest.errors.UserResourceException;
+import rs.interview.backend.web.rest.errors.UsernameAlreadyUsedException;
 
 import java.util.HashSet;
 import java.util.Optional;
@@ -45,6 +46,10 @@ public class UserServiceImpl implements UserService {
     public User registerUser(UserDTO userDTO) {
         User newUser = new User();
         String encryptedPassword = passwordEncoder.encode(userDTO.getPassword());
+        Optional<User> userOptional = userRepository.findOneByUsername(userDTO.getUsername());
+        if(userOptional.isPresent()){
+            throw new UsernameAlreadyUsedException();
+        }
         newUser.setUsername(userDTO.getUsername());
         newUser.setPassword(encryptedPassword);
         Set<Authority> authorities = new HashSet<>();

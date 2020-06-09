@@ -35,7 +35,6 @@ public class StorageServiceImpl implements StorageService {
                 Files.createDirectory(path);
             } catch (IOException e) {
                 log.error(String.format("Failed when trying to create %s folder", PATH_FOLDER), e);
-                e.printStackTrace();
             }
         }
     }
